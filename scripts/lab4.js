@@ -36,6 +36,9 @@ function discountPrices(prices, discount) {
         discounted.push(discountedPrice);
     }
 
+    if(Array.isArray(discounted) !== true) {
+        return false;
+    }
     return discounted;
 }
 
